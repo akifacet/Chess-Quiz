@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chess Quiz</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-container">
+            <p id="question-text"></p>
+        </div>
+        <div id="options-container">
+            <button class="option" onclick="checkAnswer('a')">a</button>
+            <button class="option" onclick="checkAnswer('b')">b</button>
+            <button class="option" onclick="checkAnswer('c')">c</button>
+            <button class="option" onclick="checkAnswer('d')">d</button>
+        </div>
+        <p id="result"></p>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+        <p id="score">Score: <span id="score-value">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
